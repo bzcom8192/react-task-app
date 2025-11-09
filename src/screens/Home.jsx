@@ -34,9 +34,17 @@ export default function Home() {
         }
     }
 
+    const checkPressKey = (e) => {
+        if (e.key === 'Enter') {
+            handleTaskClick()
+        }
+    }
+
     return (
         <div className='w-full h-screen flex flex-col'>
-            <div className="w-8/12 border-gray-300 shadow-md rounded p-5 mx-auto my-auto flex flex-col items-center">
+            <div className="w-8/12 border-gray-300 shadow-md rounded p-5 mx-auto my-auto flex flex-col items-center"
+                onKeyDown={checkPressKey}
+            >
                 <img src={task} alt="Task" className="w-40 mb-4" />
 
                 <h1 className="text-3xl font-bold text-gray-800">
