@@ -10,10 +10,10 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" exact={true} element={<Home />} />
-        <Route path="/showalltask" exact={true} element={<ShowAllTask />} />
-        <Route path="/addtask" exact={true} element={<AddTask />} />
-        <Route path="/updatetask/:id" exact={true} element={<UpdateTask />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/showalltask" element={<ShowAllTask />} />
+        <Route path="/addtask" element={<AddTask />} />
+        <Route path="/updatetask/:id" element={<UpdateTask />} />
       </Routes>
     </BrowserRouter>
   )
